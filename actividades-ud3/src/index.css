@@ -1,0 +1,74 @@
+/* General */
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+  color-scheme: dark;
+  color: #e2e8f0; /* Light Gray */
+  background-color: #1a202c; /* Slate 900 */
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+a {
+  font-weight: 500;
+  color: #4fd1c5; /* Teal 300 */
+  text-decoration: inherit;
+  transition: color 0.2s ease-in-out;
+}
+a:hover {
+  color: #81e6d9; /* Teal 200 */
+}
+
+/* Page Container */
+.site-container {
+  width: 100%;
+  max-width: 1024px;
+  margin: 24px;
+  padding: 16px;
+}
+
+/* Layout */
+.site-header {
+  margin-bottom: 24px;
+}
+
+.site-title {
+  color: #cbd5e0; /* Slate 300 */
+  text-align: center;
+  margin: 0 0 16px 0;
+  font-size: 2rem;
+  font-weight: 600;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #2d3748; /* Slate 700 */
+}
+
+.cabeceras {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.main-content {
+  display: block;
+}
+
+.site-footer {
+  width: 100%;
+  padding: 24px 32px;
+  background-color: #161c27; /* A bit darker than body */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}

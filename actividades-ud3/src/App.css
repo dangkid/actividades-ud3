@@ -1,0 +1,55 @@
+/* Estructura de la página dentro del contenedor */
+.section-listado {
+  padding: 12px 0;
+}
+
+.heroes-columns {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start; /* align columns at top, don't force equal height */
+}
+
+.heroes-column {
+  flex: 1 1 0;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Give some spacing inside each column so lists don't stick to each other */
+.heroes-column > * {
+  margin: 0;
+}
+
+/* Layout: main content with aside */
+.main-content {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+.section-listado {
+  flex: 1 1 auto;
+}
+
+.section-redes {
+  width: 260px;
+  min-width: 200px;
+}
+
+/* Small screens */
+@media (max-width: 700px) {
+  .cabeceras {
+    gap: 8px;
+  }
+  .site-title {
+    font-size: 1.5rem; /* Slightly larger for impact */
+  }
+  .heroes-columns {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .main-content {
+    flex-direction: column;
+  }
+}

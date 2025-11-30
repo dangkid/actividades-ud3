@@ -1,0 +1,74 @@
+.redes-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  max-width: 1024px; 
+  padding: 12px 0;
+  background-color: transparent;
+}
+
+.redes-list {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+
+.red-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 10px;
+  border-radius: 8px;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.red-item:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+  transform: translateY(-3px);
+}
+
+.red-icon svg {
+  display: block;
+}
+
+.red-label {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #cbd5e0; 
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+/* IES */
+.ies-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-left: 20px;
+  border-left: 1px solid #2d3748; 
+  color: #68d391; 
+}
+
+.ies-label {
+  margin: 0;
+  font-weight: 600;
+  color: #68d391; 
+}
+
+@media (max-width: 600px) {
+  .redes-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .ies-item {
+    border-left: none;
+    border-top: 1px solid #2d3748;
+    padding-top: 16px;
+    margin-top: 12px;
+    justify-content: center;
+    width: 80%;
+  }
+}
