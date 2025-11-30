@@ -1,40 +1,22 @@
-.cabecera {
-  color: #e2e8f0; 
-  padding: 20px 24px;
-  border-radius: 12px;
-  text-align: left;
-  transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
-  border: 1px solid #2d3748;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-}
 
-.cabecera:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+.cabecera {
+  padding: 16px 20px;
+  border-radius: 6px;
+  text-align: left;
+  margin-bottom: 12px;
 }
 
 .cabecera h1 {
-  margin: 0 0 4px 0;
-  font-size: 1.3rem;
-  font-weight: 600;
-  letter-spacing: 0.2px;
-}
-
-.cabecera-fecha {
-  display: block;
-  font-size: 0.9rem;
-  color: #94a3b8; 
-  margin: 0;
+  margin: 0 0 6px 0;
+  font-size: 1.1rem;
 }
 
 .cabecera-azul {
-  background: linear-gradient(135deg, #0ea5e9, #0369a1); 
-  color: #ffffff;
-  border: 1px solid rgba(3, 105, 161, 0.6);
+  background: #2196f3;
+  color: #fff;
 }
 
 .cabecera-roja {
-  background: linear-gradient(135deg, #ef4444, #b91c1c); 
-  color: #fff8f8;
-  border: 1px solid rgba(185, 28, 28, 0.6);
+  background: #e53935;
+  color: #fff;
 }

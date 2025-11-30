@@ -1,12 +1,12 @@
+
 .redes-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   gap: 20px;
   width: 100%;
-  max-width: 1024px; 
-  padding: 12px 0;
-  background-color: transparent;
+  padding: 18px 0 18px 0;
+  box-sizing: border-box;
 }
 
 .redes-list {
@@ -62,6 +62,7 @@
   .redes-container {
     flex-direction: column;
     align-items: center;
+    padding: 14px 0;
   }
   .ies-item {
     border-left: none;

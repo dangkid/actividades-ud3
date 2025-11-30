@@ -35,6 +35,11 @@
 .section-redes {
   width: 260px;
   min-width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 8px;
+  box-sizing: border-box;
 }
 
 /* Small screens */

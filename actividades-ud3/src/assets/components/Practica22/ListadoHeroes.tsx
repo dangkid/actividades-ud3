@@ -18,22 +18,17 @@ export const ListadoHeroes = ({ publisher }: { publisher: string }) => {
   
   // Filtra los héroes que coinciden con el publisher.
   const heroesFiltrados = heroesData.filter(heroe => heroe.publisher === publisher);
-  
-  // Determina si el formato a usar es una tabla.
-  const esFormatoTabla = publisher === 'DC Comics';
 
   // Si no hay héroes, muestra un mensaje.
   if (heroesFiltrados.length === 0) {
     return <div className="alerta">No hay héroes para {publisher}</div>;
   }
 
-  // Renderiza la lista o la tabla de héroes.
-  return (
-    <div className="contenedor-heroes">
-      <h3>Listado de: {publisher}</h3>
-
-      {/* Renderizado condicional: tabla para DC, lista para el resto. */}
-      {esFormatoTabla ? (
+  // Si el publisher es DC Comics, muestra tabla. Si no, muestra lista <li>.
+  if (publisher === 'DC Comics') {
+    return (
+      <div className="contenedor-heroes">
+        <h3>Listado de: {publisher}</h3>
         <table className="tabla-heroes">
           <thead>
             <tr>
@@ -52,17 +47,20 @@ export const ListadoHeroes = ({ publisher }: { publisher: string }) => {
             ))}
           </tbody>
         </table>
-      ) : (
+      </div>
+    );
+  } else {
+    return (
+      <div className="contenedor-heroes">
+        <h3>Listado de: {publisher}</h3>
         <ul className="lista-heroes">
           {heroesFiltrados.map((heroe, index) => (
-            <div key={index} className="grupo-lista">
-              <strong>Heroe:</strong> <ItemDato dato={heroe.superhero} esTabla={false} />
-              <span>Identidad:</span> <ItemDato dato={heroe.alter_ego} esTabla={false} />
-              <hr/>
-            </div>
+            <li key={index}>
+              {heroe.superhero} ({heroe.alter_ego})
+            </li>
           ))}
         </ul>
-      )}
-    </div>
-  );
+      </div>
+    );
+  }
 };
